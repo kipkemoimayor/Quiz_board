@@ -32,6 +32,15 @@ $("form#result").submit(function(event){
   $("#final").text(result);
   $("#result").hide();
   $(".re").show();
+  if(result>=16 && result<=20){
+    $("#percentage").text("Your score is well above 80% Congratualation")
+  }
+  else if (result>=9 && result<16) {
+    $("#percentage").text("Your score is well above 50%!You have fairly passed");
+  }
+  else {
+    $("#percentage").text("You failed please redo the test again, Your score is less than 50%");
+  }
 
 })
 
