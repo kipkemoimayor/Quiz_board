@@ -10,6 +10,7 @@ jQuery(document).ready(function(){
     var name=$("#fullname").val();
     var mail=$("#email").val();
     $("#name").text(name);
+    $("#name1").text(name);
   })
 $("form#result").submit(function(event){
   event.preventDefault();
@@ -32,6 +33,9 @@ $("form#result").submit(function(event){
   $("#final").text(result);
   $("#result").hide();
   $(".re").show();
+  $(".red").animate({
+
+  });
   if(result>=16 && result<=20){
     $("#percentage").text("Your score is well above 80% Congratualation")
   }
