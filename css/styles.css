@@ -54,9 +54,12 @@ height: 100%;
 }
 #register{
   display: none;
+  border: 1px solid #5413;
+
 }
 #body{
   display: none;
+  border: 1px solid #5413;
 }
 #name{
   text-transform: capitalize;
@@ -68,6 +71,9 @@ height: 100%;
 }
 .re{
   display: none;
+  background-color: blue;
+  color: white;
+  position: relative;
 }
 #footer{
   position: relative;
@@ -78,4 +84,8 @@ pre{
   color: white;
   overflow: auto;
 
+}
+#footer{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }

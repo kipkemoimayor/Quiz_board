@@ -33,7 +33,10 @@ $("form#result").submit(function(event){
   $("#final").text(result);
   $("#result").hide();
   $(".re").show();
-  $(".red").animate({
+  $(".re").animate({
+    transition:"400ms",
+    left:"350px",
+    opacity:0.8,
 
   });
   if(result>=16 && result<=20){
