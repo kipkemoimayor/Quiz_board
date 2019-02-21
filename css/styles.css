@@ -73,3 +73,9 @@ height: 100%;
   position: relative;
   top: 100px;
 }
+pre{
+  background-color: #784;
+  color: white;
+  overflow: auto;
+
+}
