@@ -33,7 +33,8 @@ $("form#result").submit(function(event){
   $("#final").text(result);
   $("#result").hide();
   $(".re").show();
-  $(".re").animate({
+  $(".score").show();
+  $(".score").animate({
     transition:"400ms",
     left:"350px",
     opacity:0.8,

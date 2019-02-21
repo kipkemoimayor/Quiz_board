@@ -63,10 +63,10 @@
                 <h2>Best of Goodluck</h2>
                 <label class="font" for="paragraph">Java and JavaScript are the same?</label>
                 <div class="radio">
-                  <label for=""><input id="" type="radio" required name="one" value="0">True</label>
+                  <label for="one"><input id="" type="radio" required name="one" value="0">True</label>
                 </div>
                 <div class="radio">
-                  <label for=""><input type="radio" required name="one" value="2">False</label>
+                  <label for="one"><input type="radio" required name="one" value="2">False</label>
                 </div>
                 <label  class="font" for="paragraph">Select the appropriate Boolean</label>
                 <div class="radio">
@@ -153,15 +153,9 @@
                   <input type="radio" required name="nine" value="0"><label for="">4,6</label>
                 </div>
                 <div class="radio">
-                  <input type="radio" required name="nine" value="2"><label for="">10</label>
+                  <input type="radio" class="radio" required name="nine" value="2"><label for="">10</label>
                 </div>
                 <button class="btn btn-primary" type="submit" name="button">Submit Now </button>
-
-
-
-
-
-
               </form>
 
             </div>
@@ -171,15 +165,16 @@
             <div class="col-md-8">
               <div class="re">
                 <span>Welcome again </span><span id="name1"></span>
-                <span>Your score is</span>
-                <span id="final"></span>
                 <p id="percentage"></p>
 
               </div>
 
             </div>
             <div class="col-md-4">
-
+              <div class="score">
+                <span>Your score is:</span> <br>
+                <span id="final"></span>/20
+              </div>
             </div>
 
           </div>
