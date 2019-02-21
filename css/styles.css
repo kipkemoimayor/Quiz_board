@@ -56,3 +56,8 @@ nav a:hover{
 #body{
   display: none;
 }
+#name{
+  text-transform: capitalize;
+  font-family: "Roboto",Courier;
+  font-weight: bold;
+}

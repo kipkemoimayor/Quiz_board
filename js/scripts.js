@@ -7,6 +7,9 @@ jQuery(document).ready(function(){
     $("#reg").hide();
     $("#re").hide();
     $("#body").show();
+    var name=$("#fullname").val();
+    var mail=$("#email").val();
+    $("#name").text(name);
   })
 
 });
