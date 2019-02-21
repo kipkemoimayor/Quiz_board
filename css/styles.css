@@ -42,12 +42,14 @@ nav a:hover{
   background-repeat: no-repeat;
   background-position: right center;
   background-size:  cover;
-
   color: white;
 
 }
-.jumbotron .man{
-  background-color: rgba(0,0,0,0.6);
+.man{
+width: 50%;
+background: rgba(0,0,0,0.1);
+height: 100%;
+
 
 }
 #register{

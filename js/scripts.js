@@ -11,5 +11,10 @@ jQuery(document).ready(function(){
     var mail=$("#email").val();
     $("#name").text(name);
   })
+$("form#result").submit(function(event){
+  event.preventDefault();
+})
+
+
 
 });
