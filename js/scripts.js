@@ -13,6 +13,26 @@ jQuery(document).ready(function(){
   })
 $("form#result").submit(function(event){
   event.preventDefault();
+  var one=parseInt($("input:radio[name=one]:checked").val());
+  var two=parseInt($("input:radio[name=two]:checked").val());
+  var three=parseInt($("input:radio[name=three]:checked").val());
+  var four=parseInt($("input:radio[name=four]:checked").val());
+  var five=parseInt($("input:radio[name=five]:checked").val());
+  var six=parseInt($("input:radio[name=six]:checked").val());
+  var seven=parseInt($("input:radio[name=seven]:checked").val());
+  var eigth=parseInt($("input:radio[name=eigth]:checked").val());
+  var nine=parseInt($("input:radio[name=nine]:checked").val());
+  //empty array to stored values entered
+  var total=[];
+  total.push(one,two,three,four,five,six,seven,eigth,nine);
+  var result=0;
+  for (var i=0;i<total.length;i++){
+  result+=total[i];
+  }
+  $("#final").text(result);
+  $("#result").hide();
+  $(".re").show();
+
 })
 
 

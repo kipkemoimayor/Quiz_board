@@ -66,3 +66,10 @@ height: 100%;
 .font{
   font-weight: bold;;
 }
+.re{
+  display: none;
+}
+#footer{
+  position: relative;
+  top: 100px;
+}
