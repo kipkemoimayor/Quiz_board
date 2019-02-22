@@ -128,3 +128,6 @@ pre{
 #card{
   float: left;
 }
+.col-md-8{
+  background-color: #F0F8FF;
+}
