@@ -14,6 +14,7 @@ jQuery(document).ready(function(){
     $("#name").text(name);
     $("#name1").text(name);
     $(".card-title").text(name);
+    $(".card-text").text(mail);
   })
 $("form#result").submit(function(event){
   event.preventDefault();
@@ -34,15 +35,22 @@ $("form#result").submit(function(event){
   result+=total[i];
   }
   $("#final").text(result);
-  $("#result").hide();
+  $("#result").hide();scores
   $(".re").show();
   $(".score").show();
-  $(".score").animate({
+  $("#score").show();
+  $("#showme").click(function(){
+  $("#scores").show();
+    $("").animate({
+
+    });
+  })
+/*  $(".score").animate({
     transition:"400ms",
     right:"200px",
     opacity:0.8,
 
-  });
+  });*/
   if(result>=16 && result<=20){
     $("#percentage").text("Your score is well above 80% Congratualation")
   }
