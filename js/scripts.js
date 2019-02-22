@@ -40,8 +40,10 @@ $("form#result").submit(function(event){
   $(".score").show();
   $("#score").show();
   $("#showme").click(function(){
-  $("#scores").show();
-    $("").animate({
+    $("#scores").slideDown(1000);
+    $("#scores").show();
+     $("#scores").animate({
+       transition:"400ms"
 
     });
   })

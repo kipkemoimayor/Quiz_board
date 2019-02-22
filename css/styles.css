@@ -92,8 +92,19 @@ display: none;
   display: none;
 
 }
+#scores h1{
+  text-align: center;
+  width: auto;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 25px;
+}
 #score{
   display: none;
+  padding: 10px;
+}
+#score h1,p,span{
+  margin: 5px;
 }
 #footer{
   position: relative;
@@ -113,4 +124,7 @@ pre{
 }
 .list-group{
   width: 50%;
+}
+#card{
+  float: left;
 }
