@@ -76,6 +76,9 @@ $("form#result").submit(function(event){
 
 })
 
+  $("#showm").click(function(){
+    $("#showmem").show();
+  })
 
 
 });
