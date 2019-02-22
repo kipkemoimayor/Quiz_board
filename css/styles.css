@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-}body
+}
 nav{
 
   padding: 20px;
@@ -60,6 +60,8 @@ height: 100%;
 #body{
   display: none;
   border: 1px solid #5413;
+  background-color: #DDDDFF;
+
 }
 #name{
   text-transform: capitalize;
@@ -80,6 +82,7 @@ height: 100%;
   padding: 15px;
   text-align: center;
   font-size: 20px;
+
 }
 #footer{
   position: relative;
@@ -92,4 +95,7 @@ pre{
   color: white;
   overflow: auto;
 
+}
+#score{
+  background-color: #5461;
 }

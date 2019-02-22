@@ -36,7 +36,7 @@ $("form#result").submit(function(event){
   $(".score").show();
   $(".score").animate({
     transition:"400ms",
-    left:"350px",
+    right:"200px",
     opacity:0.8,
 
   });
