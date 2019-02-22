@@ -68,6 +68,11 @@ height: 100%;
   font-family: "Roboto",Courier;
   font-weight: bold;
 }
+#name1{
+  text-transform: capitalize;
+  font-family: "Roboto",Courier;
+  font-weight: bold;
+}
 .font{
   font-weight: bold;;
 }

@@ -13,6 +13,7 @@ jQuery(document).ready(function(){
     var mail=$("#email").val();
     $("#name").text(name);
     $("#name1").text(name);
+    $(".card-title").text(name);
   })
 $("form#result").submit(function(event){
   event.preventDefault();
