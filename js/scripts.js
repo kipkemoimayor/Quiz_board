@@ -42,10 +42,18 @@ $("form#result").submit(function(event){
   $("#showme").click(function(){
     $("#scores").slideDown(1000);
     $("#scores").show();
-     $("#scores").animate({
-       transition:"400ms"
-
+     $(".score").animate({
+       transition:"400ms",
+       left:"-250px"
     });
+    $(".score").animate({
+      transition:"500ms",
+      right:"-250px"
+   });
+   $(".score").animate({
+     transition:"700ms",
+     left:"0"
+  });
   })
 /*  $(".score").animate({
     transition:"400ms",

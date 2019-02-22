@@ -77,7 +77,7 @@ height: 100%;
   font-weight: bold;;
 }
 .re{
-display: none;
+  display: none;
 }
 .score{
   background-color: blue;
@@ -99,12 +99,21 @@ display: none;
   font-weight: bold;
   font-size: 25px;
 }
+.decription p{
+  margin-left: 5px;
+  font-size: 22px;
+  font-family: sans-serif;
+
+}
 #score{
   display: none;
   padding: 10px;
 }
 #score h1,p,span{
   margin: 5px;
+}
+.score{
+  position: relative;
 }
 #footer{
   position: relative;
@@ -127,6 +136,9 @@ pre{
 }
 #card{
   float: left;
+  box-shadow: -3px 3px 3px 4px black;
+  background-color: #E0FFFF;
+  margin: 4px;
 }
 .col-md-8{
   background-color: #F0F8FF;
