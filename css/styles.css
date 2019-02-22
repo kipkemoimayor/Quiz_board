@@ -94,6 +94,7 @@ pre{
   background-color: #784;
   color: white;
   overflow: auto;
+  width: auto;
 
 }
 #score{

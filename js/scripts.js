@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
   $("button#intro").click(function(){
+
+    $("form#register").slideDown(1000)
     $("form#register").show();
   });
   $("form#register").submit(function(event){
