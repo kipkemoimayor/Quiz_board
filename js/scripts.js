@@ -54,13 +54,16 @@ $("form#result").submit(function(event){
 
   });*/
   if(result>=16 && result<=20){
-    $("#percentage").text("Your score is well above 80% Congratualation")
+    $("#percentage").text("Your score is well above 80%, Congratualation")
+    $("#message").text("Congratualation You passed your exams see you on the core program");
   }
   else if (result>=9 && result<16) {
     $("#percentage").text("Your score is well above 50%!You have fairly passed");
+    $("#message").text("Congratualation You passed your exams see you on the core program but pull up You almost failed");
   }
   else {
     $("#percentage").text("You failed please redo the test again, Your score is less than 50%");
+    $("#message").text("I am sorry, but you failed the test, unfortunately you can not cannot procced to next class");
   }
 
 })
