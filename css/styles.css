@@ -136,8 +136,7 @@ pre{
 }
 #card{
   float: left;
-  box-shadow: -3px 3px 3px 4px black;
-  background-color: #E0FFFF;
+  box-shadow: -3px 3px 3px 5px black;
   margin: 4px;
 }
 .col-md-8{
