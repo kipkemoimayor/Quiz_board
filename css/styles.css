@@ -164,3 +164,8 @@ pre{
   flex-wrap: nowrap;
   flex-direction: column;
 }
+.loading{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
