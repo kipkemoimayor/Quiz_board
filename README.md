@@ -27,6 +27,8 @@ NO know bugs as at the moment
 | Create a for loop to iterate through the array and add up all the values | 4,5,6 | [15] |
 | Create a variable to store the total result and assign initial vale to 0| 4,5,5 | 14 |
 | Displays the Total result on the document | 2,0,2 | You scored 4/6 |
+| Takes inputs and converts the total score into percentage | 2,0,4 | 80% |
+| Takes inputs and display progressive counter based on the total score | 2,2,0 | 1.2.3..4...10 |
 ## Technologies Used
 ## main languages used are
 * JavaSCript
