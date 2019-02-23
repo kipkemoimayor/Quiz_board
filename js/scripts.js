@@ -1,3 +1,4 @@
+//This is the bussiness logic/back-end
 function totalResults(question1,question2,question3,question4,question5,question6,question7,question8,question9){
   //empty array to stored values entered
   var total=[];
@@ -8,12 +9,19 @@ function totalResults(question1,question2,question3,question4,question5,question
   }
   return result;
 };
+//calculates the excat percentage
+function percentageView(value){
+  var showPercentage=(value/20)*100;
+  return showPercentage;
+}
 
+//This is the user logic
 jQuery(document).ready(function(){
   $("button#intro").click(function(){
     $("form#register").slideDown(1000)
     $("form#register").show();
   });
+
   $("form#register").submit(function(event){
     event.preventDefault();
     $("#reg").hide();
@@ -25,8 +33,9 @@ jQuery(document).ready(function(){
     $("#name1").text(name);
     $(".card-title").text(name);
     $(".card-text").text(mail);
-  })
-$("form#result").submit(function(event){
+  });
+
+  $("form#result").submit(function(event){
   event.preventDefault();
   var one=parseInt($("input:radio[name=one]:checked").val());
   var two=parseInt($("input:radio[name=two]:checked").val());
@@ -39,6 +48,8 @@ $("form#result").submit(function(event){
   var nine=parseInt($("input:radio[name=nine]:checked").val());
   var totalScore=totalResults(one,two,three,four,five,six,seven,eigth,nine);
   $("#final").text(totalScore);
+  var percentage=percentageView(totalScore);
+  $(".showPercentage").text(percentage);
   $("#result").hide();
   $(".re").show();
   $(".score").show();
@@ -70,7 +81,7 @@ $("form#result").submit(function(event){
     $("#percentage").text("Your score is well above 80%, Congratulation")
     $("#message").text("congratulation You exently passed  your exams see you on the core program");
   }
-  else if (totalScore>=9 && totalScore<16) {
+  else if (totalScore>=10 && totalScore<16) {
     $("#percentage").text("Your score is well above 50%!You have fairly passed");
     $("#message").text("congratulation You fairly passed your exams see you on the core program but pull up your socks");
   }
