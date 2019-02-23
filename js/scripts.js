@@ -15,6 +15,7 @@ function percentageView(value){
   return showPercentage;
 }
 
+
 //This is the user logic
 jQuery(document).ready(function(){
   $("button#intro").click(function(){
@@ -69,7 +70,40 @@ jQuery(document).ready(function(){
      left:"0",
      opacity:"0.8"
   });
-  })
+  var startCount=0;
+  function beginLoop() {
+    setTimeout(function(){
+      startCount++;
+      if(startCount<=totalScore){
+        if(startCount>=0 && startCount<10){
+          //
+          $(".loading").addClass("danger")
+          $("#loading").text(startCount)
+          $(".detail").text("FAIL")
+        }
+        else if (startCount>=10 && startCount<16) {
+          //
+          $(".loading").addClass("warning")
+          $("#loading").text(startCount)
+          $(".detail").text("Avarage")
+        }
+        else if (startCount>=16 && startCount<=20) {
+          //
+          $(".loading").addClass("success");
+          $("#loading").text(startCount)
+          $(".detail").text("Excellent")
+        }
+        beginLoop();
+      }
+
+    }, 500)
+
+  }
+  beginLoop();
+
+});
+
+
 /*  $(".score").animate({
     transition:"400ms",
     right:"200px",
@@ -78,8 +112,9 @@ jQuery(document).ready(function(){
   });*/
   if(totalScore>=16 && totalScore<=20){
     $("#percentage").text("Your score is well above 80%, Congratulation")
-    $("#message").text("congratulation You exently passed  your exams see you on the core program");
+    $("#message").text("congratulation You Excellently passed  your exams see you on the core program");
     $("#pass").text(percentage+"%");
+
   }
   else if (totalScore>=10 && totalScore<16) {
     $("#percentage").text("Your score is well above 50%!You have fairly passed");
