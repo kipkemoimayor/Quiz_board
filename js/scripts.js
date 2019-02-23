@@ -1,6 +1,16 @@
+function totalResults(question1,question2,question3,question4,question5,question6,question7,question8,question9){
+  //empty array to stored values entered
+  var total=[];
+  total.push(question1,question2,question3,question4,question5,question6,question7,question8,question9);
+  var result=0;
+  for (var i=0;i<total.length;i++){
+  result+=total[i];
+  }
+  return result;
+};
+
 jQuery(document).ready(function(){
   $("button#intro").click(function(){
-
     $("form#register").slideDown(1000)
     $("form#register").show();
   });
@@ -27,15 +37,9 @@ $("form#result").submit(function(event){
   var seven=parseInt($("input:radio[name=seven]:checked").val());
   var eigth=parseInt($("input:radio[name=eigth]:checked").val());
   var nine=parseInt($("input:radio[name=nine]:checked").val());
-  //empty array to stored values entered
-  var total=[];
-  total.push(one,two,three,four,five,six,seven,eigth,nine);
-  var result=0;
-  for (var i=0;i<total.length;i++){
-  result+=total[i];
-  }
-  $("#final").text(result);
-  $("#result").hide();scores
+  var totalScore=totalResults(one,two,three,four,five,six,seven,eigth,nine);
+  $("#final").text(totalScore);
+  $("#result").hide();
   $(".re").show();
   $(".score").show();
   $("#score").show();
@@ -52,7 +56,8 @@ $("form#result").submit(function(event){
    });
    $(".score").animate({
      transition:"700ms",
-     left:"0"
+     left:"0",
+     opacity:"0.8"
   });
   })
 /*  $(".score").animate({
@@ -61,17 +66,17 @@ $("form#result").submit(function(event){
     opacity:0.8,
 
   });*/
-  if(result>=16 && result<=20){
-    $("#percentage").text("Your score is well above 80%, Congratualation")
-    $("#message").text("Congratualation You passed your exams see you on the core program");
+  if(totalScore>=16 && totalScore<=20){
+    $("#percentage").text("Your score is well above 80%, Congratulation")
+    $("#message").text("congratulation You exently passed  your exams see you on the core program");
   }
-  else if (result>=9 && result<16) {
+  else if (totalScore>=9 && totalScore<16) {
     $("#percentage").text("Your score is well above 50%!You have fairly passed");
-    $("#message").text("Congratualation You passed your exams see you on the core program but pull up You almost failed");
+    $("#message").text("congratulation You fairly passed your exams see you on the core program but pull up your socks");
   }
   else {
     $("#percentage").text("You failed please redo the test again, Your score is less than 50%");
-    $("#message").text("I am sorry, but you failed the test, unfortunately you can not cannot procced to next class");
+    $("#message").text("Sorry, You failed the test, unfortunately you can not cannot procced to next class");
   }
 
 })
