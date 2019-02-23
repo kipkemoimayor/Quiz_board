@@ -9,7 +9,7 @@ function totalResults(question1,question2,question3,question4,question5,question
   }
   return result;
 };
-//calculates the excat percentage
+//calculates the exact percentage
 function percentageView(value){
   var showPercentage=(value/20)*100;
   return showPercentage;
@@ -61,6 +61,7 @@ jQuery(document).ready(function(){
        transition:"400ms",
        left:"-250px"
     });
+    //
     $(".score").animate({
       transition:"500ms",
       right:"-250px"
@@ -70,6 +71,7 @@ jQuery(document).ready(function(){
      left:"0",
      opacity:"0.8"
   });
+  //
   var startCount=0;
   function beginLoop() {
     setTimeout(function(){
@@ -130,6 +132,7 @@ jQuery(document).ready(function(){
 })
 
   $("#showm").click(function(){
+    $("#showmem").slideDown(2000);
     $("#showmem").show();
   })
 

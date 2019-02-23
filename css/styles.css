@@ -177,20 +177,28 @@ pre{
   background-color: red;
   color: white;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px 5px white;
 }
 .warning{
   background-color: yellow;
   color: black;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px 5px black;
 }
 .success{
   background-color: green;
   color: white;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px 5px white;
 }
 #loading{
   text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px 5px #0000;
 }
