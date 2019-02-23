@@ -49,7 +49,6 @@ jQuery(document).ready(function(){
   var totalScore=totalResults(one,two,three,four,five,six,seven,eigth,nine);
   $("#final").text(totalScore);
   var percentage=percentageView(totalScore);
-  $(".showPercentage").text(percentage);
   $("#result").hide();
   $(".re").show();
   $(".score").show();
@@ -80,14 +79,17 @@ jQuery(document).ready(function(){
   if(totalScore>=16 && totalScore<=20){
     $("#percentage").text("Your score is well above 80%, Congratulation")
     $("#message").text("congratulation You exently passed  your exams see you on the core program");
+    $("#pass").text(percentage+"%");
   }
   else if (totalScore>=10 && totalScore<16) {
     $("#percentage").text("Your score is well above 50%!You have fairly passed");
     $("#message").text("congratulation You fairly passed your exams see you on the core program but pull up your socks");
+    $("#fair").text(percentage+"%");
   }
   else {
     $("#percentage").text("You failed please redo the test again, Your score is less than 50%");
     $("#message").text("Sorry, You failed the test, unfortunately you can not cannot procced to next class");
+    $("#fail").text(percentage+"%");
   }
 
 })

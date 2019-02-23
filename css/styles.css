@@ -147,3 +147,20 @@ pre{
   border: 1px solid #5413;
   background-color: #DDDDFF;
 }
+.progress{
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#card-two{
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  margin: 5px;
+
+}
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
