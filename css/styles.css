@@ -136,7 +136,7 @@ pre{
 }
 #card{
   float: left;
-  box-shadow: -3px 3px 3px 5px black;
+  box-shadow: -3px 3px 5px black;
   margin: 4px;
 }
 .col-md-8{
@@ -178,21 +178,22 @@ pre{
   color: white;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px 5px white;
+  text-shadow: 2px 2px 3px white;
 }
 .warning{
   background-color: yellow;
   color: black;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px 5px black;
+  text-shadow: 2px 2px 3px black;
 }
 .success{
   background-color: green;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px 5px white;
+  text-shadow: 2px 2px  3px white;
+  box-shadow: 2px 2px  5px black;
 }
 #loading{
   text-align: center;
