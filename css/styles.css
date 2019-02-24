@@ -184,6 +184,11 @@ pre{
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px white;
+  box-shadow: 3px 3px  6px black;
+  transition: 500ms;
+  -webkit-transform:rotate(10deg);
+  position: relative;
+  z-index: 99;
 }
 .warning{
   background-color: yellow;
@@ -191,6 +196,11 @@ pre{
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
+  box-shadow: 3px 3px  6px black;
+  transition: 500ms;
+  -webkit-transform:rotate(-10deg);
+  position: relative;
+  z-index: 99;
 }
 .success{
   background-color: green;
@@ -198,7 +208,11 @@ pre{
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px  3px white;
-  box-shadow: 2px 2px  5px black;
+  box-shadow: 3px 3px  6px black -2px 0 5px black;
+  transition: 500ms;
+  -webkit-transform:rotate(10deg);
+  position: relative;
+  z-index: 99;
 }
 #loading{
   text-align: center;

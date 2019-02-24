@@ -82,18 +82,30 @@ jQuery(document).ready(function(){
           $(".loading").addClass("danger")
           $("#loading").text(startCount)
           $(".detail").text("FAIL")
+          $(".loading").animate({
+            opacity:"0.8",
+            top:"8px",
+          });
         }
         else if (startCount>=10 && startCount<16) {
           //
           $(".loading").addClass("warning")
           $("#loading").text(startCount)
-          $(".detail").text("Avarage")
+          $(".detail").text("Avarage");
+          $(".loading").animate({
+            opacity:"0.8",
+            top:"9px",
+          });
         }
         else if (startCount>=16 && startCount<=20) {
           //
           $(".loading").addClass("success");
           $("#loading").text(startCount)
           $(".detail").text("Excellent")
+          $(".loading").animate({
+            opacity:"0.8",
+            top:"15px",
+          });
         }
         beginLoop();
       }
