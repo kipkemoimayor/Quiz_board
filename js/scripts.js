@@ -91,7 +91,7 @@ jQuery(document).ready(function(){
         else if (startCount>=10 && startCount<16) {
           //
           $(".loading").addClass("warning")
-          $("#loading").text(start￼Count)
+          $("#loading").text(startCount)
           $(".detail").text("Avarage");
           $(".loading").animate({
             opacity:"0.8",
