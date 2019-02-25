@@ -16,7 +16,7 @@ function percentageView(value){
 }
 
 
-//This is the user logic
+//This is the user interface logic
 jQuery(document).ready(function(){
   $("button#intro").click(function(){
     $("form#register").slideDown(1000)
@@ -37,30 +37,31 @@ jQuery(document).ready(function(){
   });
 
   $("form#result").submit(function(event){
-  event.preventDefault();
-  var one=parseInt($("input:radio[name=one]:checked").val());
-  var two=parseInt($("input:radio[name=two]:checked").val());
-  var three=parseInt($("input:radio[name=three]:checked").val());
-  var four=parseInt($("input:radio[name=four]:checked").val());
-  var five=parseInt($("input:radio[name=five]:checked").val());
-  var six=parseInt($("input:radio[name=six]:checked").val());
-  var seven=parseInt($("input:radio[name=seven]:checked").val());
-  var eigth=parseInt($("input:radio[name=eigth]:checked").val());
-  var nine=parseInt($("input:radio[name=nine]:checked").val());
-  var totalScore=totalResults(one,two,three,four,five,six,seven,eigth,nine);
-  $("#final").text(totalScore);
-  var percentage=percentageView(totalScore);
-  $("#result").hide();
-  $(".re").show();
-  $(".score").show();
-  $("#score").show();
-  $("#showme").click(function(){
-    $("#scores").slideDown(1000);
-    $("#scores").show();
-     $(".score").animate({
-       transition:"400ms",
-       left:"-250px"
-    });
+    event.preventDefault();
+    var one=parseInt($("input:radio[name=one]:checked").val());
+    var two=parseInt($("input:radio[name=two]:checked").val());
+    var three=parseInt($("input:radio[name=three]:checked").val());
+    var four=parseInt($("input:radio[name=four]:checked").val());
+    var five=parseInt($("input:radio[name=five]:checked").val());
+    var six=parseInt($("input:radio[name=six]:checked").val());
+    var seven=parseInt($("input:radio[name=seven]:checked").val());
+    var eigth=parseInt($("input:radio[name=eigth]:checked").val());
+    var nine=parseInt($("input:radio[name=nine]:checked").val());
+    var totalScore=totalResults(one,two,three,four,five,six,seven,eigth,nine);
+    $("#final").text(totalScore);
+    var percentage=percentageView(totalScore);
+    $("#result").hide();
+    $(".re").show();
+    $(".score").show();
+    $("#score").show();
+    $("#showme").click(function(){
+      $("#scores").slideDown(1000);
+      $("#scores").show();
+       $(".score").animate({
+         transition:"400ms",
+         left:"-250px"
+      });
+
     //
     $(".score").animate({
       transition:"500ms",
@@ -90,7 +91,7 @@ jQuery(document).ready(function(){
         else if (startCount>=10 && startCount<16) {
           //
           $(".loading").addClass("warning")
-          $("#loading").text(startCount)
+          $("#loading").text(start￼Count)
           $(".detail").text("Avarage");
           $(".loading").animate({
             opacity:"0.8",

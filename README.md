@@ -4,7 +4,7 @@
 ## Description
 This application provide a user interface to the user where the user is supposed to follow the instructions on the forms.
 The program takes inputs from the user inform of a radio button and determines if the input answer is correct
-Then the program Gives multiple options for the user to Select the correct answer within the given range of Answers
+Then the program Gives mul0tiple options for the user to Select the correct answer within the given range of Answers
 ## Setup/Installation Requirements
 * A web browser.
 * The web browser should support HTML5.
@@ -12,7 +12,8 @@ Then the program Gives multiple options for the user to Select the correct answe
 * easy to navigate through using a smart phone.
 * JavaScript support.
 * a PC of 500mb Ram and 20gb HDD connected to the internet.
-* copy files into your local machine and run index.html file.
+* clone the directory into your local machine
+* Install bootstrap and jQuery and run index.html file.
 ## Known Bugs
 NO know bugs as at the moment
 ## Behavior Driven Development
