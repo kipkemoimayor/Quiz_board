@@ -1,4 +1,4 @@
-# Triangle Tracker
+# Quiz_board
 #### This is a web application, Its purpose is to provide a platform for technical exams on JavaScript, 2019
 #### By **Collins kipkemoi**
 ## Description
